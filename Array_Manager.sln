@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1401
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Array_Manager", "Array_Manager\Array_Manager.vcxproj", "{A5742678-5A78-4379-AABB-D67CCFCFA275}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5742678-5A78-4379-AABB-D67CCFCFA275}.Debug|x64.ActiveCfg = Debug|x64
+		{A5742678-5A78-4379-AABB-D67CCFCFA275}.Debug|x64.Build.0 = Debug|x64
+		{A5742678-5A78-4379-AABB-D67CCFCFA275}.Debug|x86.ActiveCfg = Debug|Win32
+		{A5742678-5A78-4379-AABB-D67CCFCFA275}.Debug|x86.Build.0 = Debug|Win32
+		{A5742678-5A78-4379-AABB-D67CCFCFA275}.Release|x64.ActiveCfg = Release|x64
+		{A5742678-5A78-4379-AABB-D67CCFCFA275}.Release|x64.Build.0 = Release|x64
+		{A5742678-5A78-4379-AABB-D67CCFCFA275}.Release|x86.ActiveCfg = Release|Win32
+		{A5742678-5A78-4379-AABB-D67CCFCFA275}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2552DB58-613B-48D1-850F-7D626C00E8AB}
+	EndGlobalSection
+EndGlobal
