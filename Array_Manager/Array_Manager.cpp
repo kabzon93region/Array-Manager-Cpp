@@ -1,25 +1,7 @@
-﻿
-#include <iostream>
+﻿//#include <iostream>
 #include <string>
-#include <stdlib.h>
-#include <thread>
-
-
-
 
 using namespace std;
-
-//string *amstemp;
-//int *amitemp;
-//float *amftemp;
-//double *amdtemp;
-//char *amctemp;
-//bool *ambtemp;
-//wchar_t *amwtemp;
-//short *amsttemp;
-//long *amltemp;
-//auto *amatemp;
-
 
 //string
 void amsUP(string *a[], string c[], int size_a_current, int size_a_new)
@@ -510,90 +492,80 @@ void amlDOWN(long *a[], long c[], int size_a_current, int size_a_new)
 	amlDOWNi = nullptr;
 }
 
-
-
 int main()
 {
 
-
-
 	//string
 	string *s = new string[3];
-		amsUP(&s, s, 3, 500);
-		amsDOWN(&s, s, 500, 1);
+	amsUP(&s, s, 3, 10000000);
+	amsDOWN(&s, s, 10000000, 0);
 	delete[] s;
 	s = nullptr;
 	//string
 
 	//int
 	int *i = new int[3];
-	amiUP(&i, i, 3, 500);
-	amiDOWN(&i, i, 500, 1);
+	amiUP(&i, i, 3, 10000000);
+	amiDOWN(&i, i, 10000000, 1);
 	delete[] i;
 	i = nullptr;
 	//int
 
 	//float
 	float *f = new float[3];
-	amfUP(&f, f, 3, 500);
-	amfDOWN(&f, f, 500, 1);
+	amfUP(&f, f, 3, 10000000);
+	amfDOWN(&f, f, 10000000, 1);
 	delete[] f;
 	f = nullptr;
 	//float
 
 	//double
 	double *d = new double[3];
-	amdUP(&d, d, 3, 500);
-	amdDOWN(&d, d, 500, 1);
+	amdUP(&d, d, 3, 10000000);
+	amdDOWN(&d, d, 10000000, 1);
 	delete[] d;
 	d = nullptr;
 	//double
 
 	//char
 	char *c = new char[3];
-	amcUP(&c, c, 3, 500);
-	amcDOWN(&c, c, 500, 1);
+	amcUP(&c, c, 3, 10000000);
+	amcDOWN(&c, c, 10000000, 1);
 	delete[] c;
 	c = nullptr;
 	//char
 	   
 	//bool
 	bool *b = new bool[3];
-	ambUP(&b, b, 3, 500);
-	ambDOWN(&b, b, 500, 1);
+	ambUP(&b, b, 3, 10000000);
+	ambDOWN(&b, b, 10000000, 1);
 	delete[] b;
 	b = nullptr;
 	//bool
 
 	//wchar_t
 	wchar_t *w = new wchar_t[3];
-	amwUP(&w, w, 3, 500);
-	amwDOWN(&w, w, 500, 1);
+	amwUP(&w, w, 3, 10000000);
+	amwDOWN(&w, w, 10000000, 1);
 	delete[] w;
 	w = nullptr;
 	//wchar_t
 
 	//short
 	short *st = new short[3];
-	amstUP(&st, st, 3, 500);
-	amstDOWN(&st, st, 500, 1);
+	amstUP(&st, st, 3, 10000000);
+	amstDOWN(&st, st, 10000000, 1);
 	delete[] st;
 	st = nullptr;
 	//short
 
 	//long
 	long *l = new long[3];
-	amlUP(&l, l, 3, 500);
-	amlDOWN(&l, l, 500, 1);
+	amlUP(&l, l, 3, 10000000);
+	amlDOWN(&l, l, 10000000, 1);
 	delete[] l;
 	l = nullptr;
 	//long
 
-
-
-
-
 	return 0;
 }
-
-
