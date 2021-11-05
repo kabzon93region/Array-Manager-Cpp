@@ -29,7 +29,6 @@ void amsUP(string *a[], string c[], int size_a_current, int size_a_new)
 
 	delete[] amsUPi;
 	amsUPi = nullptr;
-
 }
 void amsDOWN(string *a[], string c[], int size_a_current, int size_a_new)
 {
