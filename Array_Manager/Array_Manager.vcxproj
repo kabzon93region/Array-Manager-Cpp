@@ -156,6 +156,9 @@
   <ItemGroup>
     <ClCompile Include="Array_Manager.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Array_Manager.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

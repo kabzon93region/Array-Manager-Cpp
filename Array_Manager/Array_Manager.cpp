@@ -1,8 +1,9 @@
-﻿//#include <iostream>
-#include <string>
+﻿#include <iostream>
+#include "Array_Manager.h"
 
 using namespace std;
 
+//up down
 //string
 void amsUP(string *a[], string c[], int size_a_current, int size_a_new)
 {
@@ -27,7 +28,7 @@ void amsUP(string *a[], string c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amsUPi;
+	delete amsUPi;
 	amsUPi = nullptr;
 }
 void amsDOWN(string *a[], string c[], int size_a_current, int size_a_new)
@@ -54,7 +55,7 @@ void amsDOWN(string *a[], string c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amsDOWNi;
+	delete amsDOWNi;
 	amsDOWNi = nullptr;
 
 }
@@ -82,7 +83,7 @@ void amiUP(int *a[], int c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amiUPi;
+	delete amiUPi;
 	amiUPi = nullptr;
 }
 void amiDOWN(int *a[], int c[], int size_a_current, int size_a_new)
@@ -109,7 +110,7 @@ void amiDOWN(int *a[], int c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amiDOWNi;
+	delete amiDOWNi;
 	amiDOWNi = nullptr;
 }
 //float
@@ -136,7 +137,7 @@ void amfUP(float *a[], float c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amfUPi;
+	delete amfUPi;
 	amfUPi = nullptr;
 }
 void amfDOWN(float *a[], float c[], int size_a_current, int size_a_new)
@@ -163,7 +164,7 @@ void amfDOWN(float *a[], float c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amfDOWNi;
+	delete amfDOWNi;
 	amfDOWNi = nullptr;
 }
 //double
@@ -190,7 +191,7 @@ void amdUP(double *a[], double c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amdUPi;
+	delete amdUPi;
 	amdUPi = nullptr;
 }
 void amdDOWN(double *a[], double c[], int size_a_current, int size_a_new)
@@ -217,7 +218,7 @@ void amdDOWN(double *a[], double c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amdDOWNi;
+	delete amdDOWNi;
 	amdDOWNi = nullptr;
 }
 //char
@@ -244,7 +245,7 @@ void amcUP(char *a[], char c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amcUPi;
+	delete amcUPi;
 	amcUPi = nullptr;
 }
 void amcDOWN(char *a[], char c[], int size_a_current, int size_a_new)
@@ -271,7 +272,7 @@ void amcDOWN(char *a[], char c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amcDOWNi;
+	delete amcDOWNi;
 	amcDOWNi = nullptr;
 }
 //bool
@@ -298,7 +299,7 @@ void ambUP(bool *a[], bool c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] ambUPi;
+	delete ambUPi;
 	ambUPi = nullptr;
 }
 void ambDOWN(bool *a[], bool c[], int size_a_current, int size_a_new)
@@ -325,7 +326,7 @@ void ambDOWN(bool *a[], bool c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] ambDOWNi;
+	delete ambDOWNi;
 	ambDOWNi = nullptr;
 }
 //wchar_t
@@ -352,7 +353,7 @@ void amwUP(wchar_t *a[], wchar_t c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amwUPi;
+	delete amwUPi;
 	amwUPi = nullptr;
 }
 void amwDOWN(wchar_t *a[], wchar_t c[], int size_a_current, int size_a_new)
@@ -379,7 +380,7 @@ void amwDOWN(wchar_t *a[], wchar_t c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amwDOWNi;
+	delete amwDOWNi;
 	amwDOWNi = nullptr;
 }
 //short
@@ -406,7 +407,7 @@ void amstUP(short *a[], short c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amstUPi;
+	delete amstUPi;
 	amstUPi = nullptr;
 }
 void amstDOWN(short *a[], short c[], int size_a_current, int size_a_new)
@@ -433,7 +434,7 @@ void amstDOWN(short *a[], short c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amstDOWNi;
+	delete amstDOWNi;
 	amstDOWNi = nullptr;
 }
 //long
@@ -460,7 +461,7 @@ void amlUP(long *a[], long c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amlUPi;
+	delete amlUPi;
 	amlUPi = nullptr;
 }
 void amlDOWN(long *a[], long c[], int size_a_current, int size_a_new)
@@ -487,10 +488,52 @@ void amlDOWN(long *a[], long c[], int size_a_current, int size_a_new)
 	delete[] b;
 	b = nullptr;
 
-	delete[] amlDOWNi;
+	delete amlDOWNi;
 	amlDOWNi = nullptr;
 }
+//up down
 
+//insert drop
+//string
+void amsIns(string *a, int insertIndex, int size_a_current, string insertData)
+{
+	for (int i = size_a_current-1; i > insertIndex; i--)
+	{
+		a[i] = a[i - 1];
+	}
+
+	a[insertIndex] = insertData;
+}
+
+
+
+
+
+int main()
+{
+	string *s = new string[5];
+	s[0] = "s0";
+	s[1] = "s1";
+	s[2] = "s2";
+	s[3] = "s3";
+	s[4] = "s4";
+
+	amsUP(&s, s, 5, 6);
+	amsIns(s, 3, 5, "dsadas");
+
+	/*for (int i = 0; i < 6; i++)
+	{
+		cout << s[i] << endl;
+	}*/
+
+	//system("pause");
+	delete[] s;
+	s = nullptr;
+
+	return 0;
+}
+
+/*
 int main()
 {
 
@@ -568,3 +611,4 @@ int main()
 
 	return 0;
 }
+*/
