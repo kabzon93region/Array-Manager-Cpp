@@ -5,12 +5,12 @@ using namespace std;
 
 //up down
 //string
-void amsUP(string *a[], string c[], int size_a_current, int size_a_new)
+void amsUP(string *a[], int size_a_current, int size_a_new)
 {
 	string *amstemp;
 	int *amsUPi = new int;
 	*amsUPi = 0;
-
+	string *c = *a;
 	string *b = new string[size_a_new];
 
 	while (*amsUPi < size_a_current)
@@ -31,12 +31,12 @@ void amsUP(string *a[], string c[], int size_a_current, int size_a_new)
 	delete amsUPi;
 	amsUPi = nullptr;
 }
-void amsDOWN(string *a[], string c[], int size_a_current, int size_a_new)
+void amsDOWN(string *a[], int size_a_current, int size_a_new)
 {
 	string *amstemp;
 	int *amsDOWNi = new int;
 	*amsDOWNi = 0;
-
+	string *c = *a;
 	string *b = new string[size_a_new];
 
 	while (*amsDOWNi < (size_a_new))
@@ -60,12 +60,12 @@ void amsDOWN(string *a[], string c[], int size_a_current, int size_a_new)
 
 }
 //int
-void amiUP(int *a[], int c[], int size_a_current, int size_a_new)
+void amiUP(int *a[], int size_a_current, int size_a_new)
 {
 	int *amitemp;
 	int *amiUPi = new int;
 	*amiUPi = 0;
-
+	int *c = *a;
 	int *b = new int[size_a_new];
 
 	while (*amiUPi < size_a_current)
@@ -86,12 +86,12 @@ void amiUP(int *a[], int c[], int size_a_current, int size_a_new)
 	delete amiUPi;
 	amiUPi = nullptr;
 }
-void amiDOWN(int *a[], int c[], int size_a_current, int size_a_new)
+void amiDOWN(int *a[], int size_a_current, int size_a_new)
 {
 	int *amitemp;
 	int *amiDOWNi = new int;
 	*amiDOWNi = 0;
-
+	int *c = *a;
 	int *b = new int[size_a_new];
 
 	while (*amiDOWNi < (size_a_new))
@@ -114,12 +114,12 @@ void amiDOWN(int *a[], int c[], int size_a_current, int size_a_new)
 	amiDOWNi = nullptr;
 }
 //float
-void amfUP(float *a[], float c[], int size_a_current, int size_a_new)
+void amfUP(float *a[], int size_a_current, int size_a_new)
 {
 	float *amftemp;
 	int *amfUPi = new int;
 	*amfUPi = 0;
-
+	float *c = *a;
 	float *b = new float[size_a_new];
 
 	while (*amfUPi < size_a_current)
@@ -140,12 +140,12 @@ void amfUP(float *a[], float c[], int size_a_current, int size_a_new)
 	delete amfUPi;
 	amfUPi = nullptr;
 }
-void amfDOWN(float *a[], float c[], int size_a_current, int size_a_new)
+void amfDOWN(float *a[], int size_a_current, int size_a_new)
 {
 	float *amftemp;
 	int *amfDOWNi = new int;
 	*amfDOWNi = 0;
-
+	float *c = *a;
 	float *b = new float[size_a_new];
 
 	while (*amfDOWNi < (size_a_new))
@@ -168,12 +168,12 @@ void amfDOWN(float *a[], float c[], int size_a_current, int size_a_new)
 	amfDOWNi = nullptr;
 }
 //double
-void amdUP(double *a[], double c[], int size_a_current, int size_a_new)
+void amdUP(double *a[], int size_a_current, int size_a_new)
 {
 	double *amdtemp;
 	int *amdUPi = new int;
 	*amdUPi = 0;
-
+	double *c = *a;
 	double *b = new double[size_a_new];
 
 	while (*amdUPi < size_a_current)
@@ -194,12 +194,12 @@ void amdUP(double *a[], double c[], int size_a_current, int size_a_new)
 	delete amdUPi;
 	amdUPi = nullptr;
 }
-void amdDOWN(double *a[], double c[], int size_a_current, int size_a_new)
+void amdDOWN(double *a[], int size_a_current, int size_a_new)
 {
 	double *amdtemp;
 	int *amdDOWNi = new int;
 	*amdDOWNi = 0;
-
+	double *c = *a;
 	double *b = new double[size_a_new];
 
 	while (*amdDOWNi < (size_a_new))
@@ -222,12 +222,12 @@ void amdDOWN(double *a[], double c[], int size_a_current, int size_a_new)
 	amdDOWNi = nullptr;
 }
 //char
-void amcUP(char *a[], char c[], int size_a_current, int size_a_new)
+void amcUP(char *a[], int size_a_current, int size_a_new)
 {
 	char *amctemp;
 	int *amcUPi = new int;
 	*amcUPi = 0;
-
+	char *c = *a;
 	char *b = new char[size_a_new];
 
 	while (*amcUPi < size_a_current)
@@ -248,12 +248,12 @@ void amcUP(char *a[], char c[], int size_a_current, int size_a_new)
 	delete amcUPi;
 	amcUPi = nullptr;
 }
-void amcDOWN(char *a[], char c[], int size_a_current, int size_a_new)
+void amcDOWN(char *a[], int size_a_current, int size_a_new)
 {
 	char *amctemp;
 	int *amcDOWNi = new int;
 	*amcDOWNi = 0;
-
+	char *c = *a;
 	char *b = new char[size_a_new];
 
 	while (*amcDOWNi < (size_a_new))
@@ -276,12 +276,12 @@ void amcDOWN(char *a[], char c[], int size_a_current, int size_a_new)
 	amcDOWNi = nullptr;
 }
 //bool
-void ambUP(bool *a[], bool c[], int size_a_current, int size_a_new)
+void ambUP(bool *a[], int size_a_current, int size_a_new)
 {
 	bool *ambtemp;
 	int *ambUPi = new int;
 	*ambUPi = 0;
-
+	bool *c = *a;
 	bool *b = new bool[size_a_new];
 
 	while (*ambUPi < size_a_current)
@@ -302,12 +302,12 @@ void ambUP(bool *a[], bool c[], int size_a_current, int size_a_new)
 	delete ambUPi;
 	ambUPi = nullptr;
 }
-void ambDOWN(bool *a[], bool c[], int size_a_current, int size_a_new)
+void ambDOWN(bool *a[], int size_a_current, int size_a_new)
 {
 	bool *ambtemp;
 	int *ambDOWNi = new int;
 	*ambDOWNi = 0;
-
+	bool *c = *a;
 	bool *b = new bool[size_a_new];
 
 	while (*ambDOWNi < (size_a_new))
@@ -330,12 +330,12 @@ void ambDOWN(bool *a[], bool c[], int size_a_current, int size_a_new)
 	ambDOWNi = nullptr;
 }
 //wchar_t
-void amwUP(wchar_t *a[], wchar_t c[], int size_a_current, int size_a_new)
+void amwUP(wchar_t *a[], int size_a_current, int size_a_new)
 {
 	wchar_t *amwtemp;
 	int *amwUPi = new int;
 	*amwUPi = 0;
-
+	wchar_t *c = *a;
 	wchar_t *b = new wchar_t[size_a_new];
 
 	while (*amwUPi < size_a_current)
@@ -356,12 +356,12 @@ void amwUP(wchar_t *a[], wchar_t c[], int size_a_current, int size_a_new)
 	delete amwUPi;
 	amwUPi = nullptr;
 }
-void amwDOWN(wchar_t *a[], wchar_t c[], int size_a_current, int size_a_new)
+void amwDOWN(wchar_t *a[], int size_a_current, int size_a_new)
 {
 	wchar_t *amwtemp;
 	int *amwDOWNi = new int;
 	*amwDOWNi = 0;
-
+	wchar_t *c = *a;
 	wchar_t *b = new wchar_t[size_a_new];
 
 	while (*amwDOWNi < (size_a_new))
@@ -384,12 +384,12 @@ void amwDOWN(wchar_t *a[], wchar_t c[], int size_a_current, int size_a_new)
 	amwDOWNi = nullptr;
 }
 //short
-void amstUP(short *a[], short c[], int size_a_current, int size_a_new)
+void amstUP(short *a[], int size_a_current, int size_a_new)
 {
 	short *amsttemp;
 	int *amstUPi = new int;
 	*amstUPi = 0;
-
+	short *c = *a;
 	short *b = new short[size_a_new];
 
 	while (*amstUPi < size_a_current)
@@ -410,12 +410,12 @@ void amstUP(short *a[], short c[], int size_a_current, int size_a_new)
 	delete amstUPi;
 	amstUPi = nullptr;
 }
-void amstDOWN(short *a[], short c[], int size_a_current, int size_a_new)
+void amstDOWN(short *a[], int size_a_current, int size_a_new)
 {
 	short *amsttemp;
 	int *amstDOWNi = new int;
 	*amstDOWNi = 0;
-
+	short *c = *a;
 	short *b = new short[size_a_new];
 
 	while (*amstDOWNi < (size_a_new))
@@ -438,12 +438,12 @@ void amstDOWN(short *a[], short c[], int size_a_current, int size_a_new)
 	amstDOWNi = nullptr;
 }
 //long
-void amlUP(long *a[], long c[], int size_a_current, int size_a_new)
+void amlUP(long *a[], int size_a_current, int size_a_new)
 {
 	long *amltemp;
 	int *amlUPi = new int;
 	*amlUPi = 0;
-
+	long *c = *a;
 	long *b = new long[size_a_new];
 
 	while (*amlUPi < size_a_current)
@@ -464,13 +464,67 @@ void amlUP(long *a[], long c[], int size_a_current, int size_a_new)
 	delete amlUPi;
 	amlUPi = nullptr;
 }
-void amlDOWN(long *a[], long c[], int size_a_current, int size_a_new)
+void amlDOWN(long *a[], int size_a_current, int size_a_new)
 {
 	long *amltemp;
 	int *amlDOWNi = new int;
 	*amlDOWNi = 0;
-
+	long *c = *a;
 	long *b = new long[size_a_new];
+
+	while (*amlDOWNi < (size_a_new))
+	{
+		b[*amlDOWNi] = c[*amlDOWNi];
+		*amlDOWNi = *amlDOWNi + 1;
+
+	}
+
+	amltemp = *a;
+
+	*a = b;
+
+	b = amltemp;
+
+	delete[] b;
+	b = nullptr;
+
+	delete amlDOWNi;
+	amlDOWNi = nullptr;
+}
+//long long
+void amllUP(long long *a[], int size_a_current, int size_a_new)
+{
+	long long *amltemp;
+	int *amlUPi = new int;
+	*amlUPi = 0;
+	long long *c = *a;
+	long long *b = new long long[size_a_new];
+
+	while (*amlUPi < size_a_current)
+	{
+		b[*amlUPi] = c[*amlUPi];
+		*amlUPi = *amlUPi + 1;
+	}
+
+	amltemp = *a;
+
+	*a = b;
+
+	b = amltemp;
+
+	delete[] b;
+	b = nullptr;
+
+	delete amlUPi;
+	amlUPi = nullptr;
+}
+void amllDOWN(long long *a[], int size_a_current, int size_a_new)
+{
+	long long *amltemp;
+	int *amlDOWNi = new int;
+	*amlDOWNi = 0;
+	long long *c = *a;
+	long long *b = new long long[size_a_new];
 
 	while (*amlDOWNi < (size_a_new))
 	{
@@ -495,14 +549,77 @@ void amlDOWN(long *a[], long c[], int size_a_current, int size_a_new)
 
 //insert drop
 //string
-void amsIns(string *a, int insertIndex, int size_a_current, string insertData)
+void amsIns(string *a[], int insertIndex, int size_a_current, string insertData)
 {
-	for (int i = size_a_current-1; i > insertIndex; i--)
+	int size_a_new = size_a_current + 1;
+	string *c = *a;
+	
+		//
+		string *amstemp;
+		int *amsUPi = new int;
+		*amsUPi = 0;
+		string *b = new string[size_a_new];
+
+	while (*amsUPi < size_a_current)
 	{
-		a[i] = a[i - 1];
+		b[*amsUPi] = c[*amsUPi];
+		*amsUPi = *amsUPi + 1;
 	}
 
-	a[insertIndex] = insertData;
+		//
+		for (int i = size_a_current; i > insertIndex; i--)
+		{
+			b[i] = b[i - 1];
+		}
+		b[insertIndex] = insertData;
+		//
+
+	amstemp = *a;
+	*a = b;
+	b = amstemp;
+
+	delete[] b;
+	b = nullptr;
+
+	delete amsUPi;
+	amsUPi = nullptr;
+	//
+}
+void amsDrop(string *a[], int dropIndex, int size_a_current)
+{
+	int size_a_new = size_a_current - 1;
+	string *c = *a;
+
+	//
+	string *amstemp;
+	int *amsDOWNi = new int;
+	*amsDOWNi = 0;
+	string *b = new string[size_a_new];
+
+		//
+		for (int i = dropIndex; i < size_a_new; i++)
+		{
+			c[i] = c[i + 1];
+		}
+		//
+
+	while (*amsDOWNi < (size_a_new))
+	{
+		b[*amsDOWNi] = c[*amsDOWNi];
+		*amsDOWNi = *amsDOWNi + 1;
+
+	}
+
+	amstemp = *a;
+	*a = b;
+	b = amstemp;
+
+	delete[] b;
+	b = nullptr;
+
+	delete amsDOWNi;
+	amsDOWNi = nullptr;
+	//
 }
 
 
@@ -511,6 +628,8 @@ void amsIns(string *a, int insertIndex, int size_a_current, string insertData)
 
 int main()
 {
+
+
 	string *s = new string[5];
 	s[0] = "s0";
 	s[1] = "s1";
@@ -518,13 +637,31 @@ int main()
 	s[3] = "s3";
 	s[4] = "s4";
 
-	amsUP(&s, s, 5, 6);
-	amsIns(s, 3, 5, "dsadas");
+	amsIns(&s, 3, 5, "dsadas");
 
-	/*for (int i = 0; i < 6; i++)
+	//
+	int di = 2;
+	int sac = 5;
+
+	//
+
+	for (int i = 0; i < 6; i++)
 	{
 		cout << s[i] << endl;
-	}*/
+	}
+
+	cout << "\n" << endl;
+
+
+	amsDrop(&s, 2, 6);
+
+
+	for (int i = 0; i < 5; i++)
+	{
+		cout << s[i] << endl;
+	}
+
+
 
 	//system("pause");
 	delete[] s;
