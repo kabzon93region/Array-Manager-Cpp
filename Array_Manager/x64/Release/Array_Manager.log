@@ -1,4 +1,4 @@
-﻿  Создание кода
-  All 80 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Создание кода завершено
-  Array_Manager.vcxproj -> S:\BrainStorm\C++_Projects\Array-Manager-Cpp\x64\Release\Array_Manager.exe
+﻿  Array_Manager.cpp
+s:\brainstorm\c++_projects\array-manager-cpp\array_manager\array_manager.cpp(14): error C2039: be: не является членом "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\xstring(4373): note:  см. объявление "std::basic_string<char,std::char_traits<char>,std::allocator<char>>"
+s:\brainstorm\c++_projects\array-manager-cpp\array_manager\array_manager.cpp(653): error C2080: "new-expression": тип для "auto" можно вывести только из выражения с одним инициализатором

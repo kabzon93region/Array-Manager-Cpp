@@ -3,6 +3,27 @@
 
 using namespace std;
 
+int length(string *ar[])
+{
+	bool searshing = true;
+	int iteral = 0;
+	string *s = *ar;
+
+	while (searshing)
+	{
+		if (s[iteral].be == true)
+		{
+			iteral++;
+		}
+		else
+		{
+			searshing = false;
+		}
+	}
+
+	return iteral;
+}
+
 //up down
 //string
 void amsUP(string *a[], int size_a_current, int size_a_new)
@@ -625,9 +646,10 @@ void amsDrop(string *a[], int dropIndex, int size_a_current)
 
 
 
-
 int main()
 {
+
+
 
 
 	string *s = new string[5];
